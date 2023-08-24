@@ -1,7 +1,8 @@
 #include "shell.h"
 
 /**
- * is_chain - a function to determine if the current character in the buffer serves as a delimiter for a chain.
+ * is_chain - a function to determine if the current character
+ * in the buffer serves as a delimiter for a chain.
  * @info: The structural parameter
  * @buf: The character buffer
  * @p: of the current position within the buffer
