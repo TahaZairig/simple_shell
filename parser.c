@@ -5,7 +5,7 @@
  * @info: The information structure
  * @path: The file's path
  *
- * Return value: 1 if the condition is true, 0 otherwise
+ * Return: 1 if the condition is true, 0 otherwise
  */
 int is_cmd(info_t *info, char *path)
 {

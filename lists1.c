@@ -1,10 +1,10 @@
 #include "shell.h"
 
 /**
- * list_len - calculates the length of a linked list
- * @h: A pointer to the initial node
+ * list_len - Calculates the length of a linked list.
+ * @h: Pointer to the first node.
  *
- * Return value: The size of the list
+ * Return: Size of the list.
  */
 size_t list_len(const list_t *h)
 {
@@ -19,10 +19,10 @@ size_t list_len(const list_t *h)
 }
 
 /**
- * list_to_strings - a function that generates an array of strings from the list->str elements
- * @head: A pointer to the initial node
+ * list_to_strings - Converts the 'str' elements of a linked list to an array of strings.
+ * @head: Pointer to the first node.
  *
- * Return: An array of strings.
+ * Return: Array of strings.
  */
 char **list_to_strings(list_t *head)
 {
@@ -56,10 +56,10 @@ char **list_to_strings(list_t *head)
 
 
 /**
- * print_list - a function that displays all elements of a list_t linked list
- * @h: A pointer to the initial node
+ * print_list - Prints all elements of a list_t linked list.
+ * @h: Pointer to the first node.
  *
- * Return value: The size of the list
+ * Return: Size of the list.
  */
 size_t print_list(const list_t *h)
 {
@@ -79,12 +79,12 @@ size_t print_list(const list_t *h)
 }
 
 /**
- * node_starts_with - a function that returns the node in a linked list whose string starts with a specified prefix.
- * @node: Pointer to the beginning of the list
- * @prefix: The string for matching
- * @c: The character immediately following the prefix to be matched
+ * node_starts_with - Returns the node whose string starts with the specified prefix.
+ * @node: Pointer to the list head.
+ * @prefix: String to match at the beginning.
+ * @c: The next character after the prefix to match.
  *
- * Return: The matching node, or NULL if no match is found
+ * Return: The matching node or NULL if not found.
  */
 list_t *node_starts_with(list_t *node, char *prefix, char c)
 {
@@ -101,11 +101,11 @@ list_t *node_starts_with(list_t *node, char *prefix, char c)
 }
 
 /**
- * get_node_index - retrieves the index of a node.
- * @head: Pointer to the head of the list
- * @node: A pointer pointing to the specific node
+ * get_node_index - Retrieves the index of a specific node.
+ * @head: Pointer to the list head.
+ * @node: Pointer to the node.
  *
- * Return: The index of the node, or -1 if the node is not found.
+ * Return: Index of the node or -1 if not found.
  */
 ssize_t get_node_index(list_t *head, list_t *node)
 {

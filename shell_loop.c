@@ -5,7 +5,8 @@
  * @info: The parameter and return information structure
  * @av: The argument vector passed from the main() function
  *
- * Return value: 0 for success, 1 for error, or an error code indicating the specific error
+ * Return: 0 for success, 1 for error,
+ * or an error code indicating the specific error
  */
 int hsh(info_t *info, char **av)
 {
@@ -47,10 +48,12 @@ int hsh(info_t *info, char **av)
  * find_builtin - locates a built-in command
  * @info: The parameter and return information structure
  *
- * Return value: -1 if the built-in command is not found,
- * 	0 if the built-in command is executed successfully,
- * 	A return value of 1 indicates that a built-in command was found but did not succeed,
- * 	A return value of 2 signifies that a built-in command signals the program to exit using the exit() function.
+ * Return: -1 if the built-in command is not found,
+ * 0 if the built-in command is executed successfully,
+ * A return value of 1 indicates that a built-in
+ * command was found but did not succeed,
+ * A return value of 2 signifies that a built-in
+ * command signals the program to exit using the exit() function.
  */
 int find_builtin(info_t *info)
 {
@@ -81,7 +84,7 @@ int find_builtin(info_t *info)
  * find_cmd - locates a command within the PATH directories
  * @info: The parameter and return information structure
  *
- * Return type: void
+ * Return: void
  */
 void find_cmd(info_t *info)
 {

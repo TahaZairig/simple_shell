@@ -5,7 +5,7 @@
  * @ac: The count of command-line arguments
  * @av: The argument vector
  *
- * Return value: 0 if the program execution is successful, 1 if an error occurs
+ * Return: 0 if the program execution is successful, 1 if an error occurs
  */
 int main(int ac, char **av)
 {
