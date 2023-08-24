@@ -4,7 +4,7 @@
  * _strlen - provides the length of a string
  * @s: The string for which to determine the length
  *
- * Return value: Integer representing the length of the string
+ * Return: Integer representing the length of the string
  */
 int _strlen(char *s)
 {
@@ -23,7 +23,8 @@ int _strlen(char *s)
  * @s1: The first string
  * @s2: The second string
  *
- * Return value: Negative if s1 < s2, positive if s1 > s2, and zero if s1 is equal to s2
+ * Return: Negative if s1 < s2, positive if s1 > s2,
+ * and zero if s1 is equal to s2
  */
 int _strcmp(char *s1, char *s2)
 {
@@ -41,11 +42,11 @@ int _strcmp(char *s1, char *s2)
 }
 
 /**
- * starts_with - verifies if the string "needle" begins with the contents of the string "haystack."
+ * starts_with - verifies if the string "needle"
+ * begins with the contents of the string "haystack."
  * @haystack: The string to be searched
- * @needle: The substring to locate
- *
- * Return value: Address of the next character in "haystack" or NULL if not found
+ * @needle: The substring to locate.
+ * Return: Address of the next character in "haystack" or NULL if not found
  */
 char *starts_with(const char *haystack, const char *needle)
 {
@@ -60,7 +61,7 @@ char *starts_with(const char *haystack, const char *needle)
  * @dest: The destination buffer
  * @src: The source buffer
  *
- * Return value: A pointer to the destination buffer
+ * Return: A pointer to the destination buffer
  */
 char *_strcat(char *dest, char *src)
 {

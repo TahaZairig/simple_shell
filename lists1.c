@@ -4,7 +4,7 @@
  * list_len - calculates the length of a linked list
  * @h: A pointer to the initial node
  *
- * Return value: The size of the list
+ * Return: The size of the list
  */
 size_t list_len(const list_t *h)
 {
@@ -19,7 +19,8 @@ size_t list_len(const list_t *h)
 }
 
 /**
- * list_to_strings - a function that generates an array of strings from the list->str elements
+ * list_to_strings - a function that generates an array
+ * of strings from the list->str elements
  * @head: A pointer to the initial node
  *
  * Return: An array of strings.
@@ -79,7 +80,8 @@ size_t print_list(const list_t *h)
 }
 
 /**
- * node_starts_with - a function that returns the node in a linked list whose string starts with a specified prefix.
+ * node_starts_with - a function that returns the node in a linked list
+ * whose string starts with a specified prefix.
  * @node: Pointer to the beginning of the list
  * @prefix: The string for matching
  * @c: The character immediately following the prefix to be matched

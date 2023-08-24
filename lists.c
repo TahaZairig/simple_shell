@@ -6,7 +6,7 @@
  * @str: The string field of a node
  * @num: The node index utilized for tracking history
  *
- * Return value: The size or number of elements in the list.
+ * Return: The size or number of elements in the list.
  */
 list_t *add_node(list_t **head, const char *str, int num)
 {
@@ -39,7 +39,7 @@ list_t *add_node(list_t **head, const char *str, int num)
  * @str: The string field of a node
  * @num: The node index utilized for tracking history
  *
- * Return value: The size or number of elements in the list.
+ * Return: The size or number of elements in the list.
  */
 list_t *add_node_end(list_t **head, const char *str, int num)
 {
@@ -78,7 +78,7 @@ list_t *add_node_end(list_t **head, const char *str, int num)
  * print_list_str - displays only the str elements of a list_t linked list.
  * @h: A pointer pointing to the initial node
  *
- * Return value: The size or number of elements in the list.
+ * Return: The size or number of elements in the list.
  */
 size_t print_list_str(const list_t *h)
 {
@@ -95,11 +95,12 @@ size_t print_list_str(const list_t *h)
 }
 
 /**
- * delete_node_at_index - a function that removes a node at a specified index in the list.
+ * delete_node_at_index - a function that removes a node at a
+ * specified index in the list.
  * @head: The address of the pointer pointing to the head node
  * @index: The index of the node that needs to be deleted
  *
- * Return value: 1 if the deletion is successful, 0 if it fails
+ * Return: 1 if the deletion is successful, 0 if it fails
  */
 int delete_node_at_index(list_t **head, unsigned int index)
 {
@@ -135,10 +136,11 @@ int delete_node_at_index(list_t **head, unsigned int index)
 }
 
 /**
- * free_list - a function that deallocates memory for all nodes in a linked list.
+ * free_list - a function that deallocates memory for
+ * all nodes in a linked list.
  * @head_ptr: The address of the pointer pointing to the head node
  *
- * Return type: void
+ * Return: void
  */
 void free_list(list_t **head_ptr)
 {
